@@ -13,6 +13,7 @@
   "author": "Max Ly",
   "license": "ISC",
   "dependencies": {
+    "@paypal/checkout-server-sdk": "^1.0.2",
     "accesscontrol": "^2.2.1",
     "bcrypt": "^5.0.1",
     "cloudinary": "^1.25.1",
@@ -26,8 +27,10 @@
     "mailgen": "^2.0.14",
     "mongoose": "^5.12.4",
     "mongoose-aggregate-paginate-v2": "^1.0.42",
+    "nodemailer": "^6.5.0",
     "passport": "^0.4.1",
     "passport-jwt": "^4.0.0",
+    "validator": "^13.5.2",
     "xss-clean": "^0.1.1"
   }
 }
