@@ -4,6 +4,11 @@ const mongoose = require('mongoose');
 const xss = require('xss-clean');
 const mongoSanitize = require('express-mongo-sanitize');
 
+
+// body parse
+app.use(express.json())
+
+
 // sanitize middleware
 app.use(xss());
 app.use(mongoSanitize());
