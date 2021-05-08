@@ -1,6 +1,11 @@
+import Featured from './featured';
 
-const index = () => {
-  return <div>Home</div>;
+const Home = () => {
+  return (
+    <div>
+      <Featured />
+    </div>
+  );
 };
 
-export default index;
+export default Home;
