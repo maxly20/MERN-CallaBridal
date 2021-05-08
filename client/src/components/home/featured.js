@@ -1,4 +1,4 @@
-import Carrousel from 'utils/carrousel';
+import Carrousel from '../../utils/carrousel';
 
 const Featured = () => {
   const corrouselItems = [
