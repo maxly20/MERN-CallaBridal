@@ -23,6 +23,27 @@ const Featured = () => {
       lineTitle: 'View Collections',
       linkTo: '/shop',
     },
+    {
+      img: '/images/featured/featured_home_4.jpg',
+      lineOne: 'CALLA LIMITED 2021',
+      lineTwo: 'Custom Designs',
+      lineTitle: 'Show Now',
+      linkTo: '/shop',
+    },
+    {
+      img: '/images/featured/featured_home_5.jpg',
+      lineOne: 'CALLA COUTURE 2021',
+      lineTwo: 'Custom Designs',
+      lineTitle: 'View Catalogue',
+      linkTo: '/shop',
+    },
+    {
+      img: '/images/featured/featured_home_6.jpg',
+      lineOne: 'CALLA COLLECTIONS 2021',
+      lineTwo: 'Custom Designs',
+      lineTitle: 'View Collections',
+      linkTo: '/shop',
+    },
   ];
 
   return (
