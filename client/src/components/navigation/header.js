@@ -5,7 +5,7 @@ const Header = () => {
     <header className='bck_b_light'>
       <div className='container'>
         <div className='left'>
-          <div className='logo'>CALLA BRIDAL</div>
+          <div className='logo'>CALLA</div>
         </div>
         <div className='right'>
           <div className='top'>
