@@ -1,4 +1,14 @@
-# Getting Started with Create React App
+# INCOME TRACK - REACT APP
+
+A simple React App to keep track of income.
+
+Deployed live at : 
+
+
+![](SitePreview.png)
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
