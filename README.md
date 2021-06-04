@@ -2,7 +2,8 @@
 
 A simple React App to keep track of income.
 
-Deployed live at : 
+Deployed live at : https://maxly-incometrack.netlify.app
+
 
 
 ![](SitePreview.png)
