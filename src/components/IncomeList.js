@@ -1,25 +1,17 @@
-import IncomeItem from './IncomeItem';
+import { useContext } from 'react';
+import { GlobalContext } from '../context/GlobalState';
+import IncomeTransaction from './IncomeTransaction';
 
-const IncomeList = ({ income, setIncome }) => {
-  const removeIncome = i => {
-    let temp = income.filter((v, index) => index !== i);
-    setIncome(temp);
-  };
-
-  const sortByDate = (a, b) => {
-    return a.date - b.date;
-  };
-
+const IncomeList = () => {
+  const { incomeTransactions } = useContext(GlobalContext);
   return (
-    <div className='income-list'>
-      {income.sort(sortByDate).map((value, index) => (
-        <IncomeItem
-          key={index}
-          income={value}
-          index={index}
-          removeIncome={removeIncome}
-        />
-      ))}
+    <div className='transactions transactions-income'>
+      <h2>TransactionHistory</h2>
+      <ul className='transaction-list'>
+        {incomeTransactions.map(i => (
+          <IncomeTransaction key={i.id} incomeTransaction={i} />
+        ))}
+      </ul>
     </div>
   );
 };

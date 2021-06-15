@@ -1,9 +1,8 @@
-const Header = ({ totalIncome }) => {
+const Header = () => {
   return (
-    <header>
-      <h1>Income Tracker</h1>
-      <div className='total-income'>${totalIncome}</div>
-    </header>
+    <div className='header'>
+      <h1>Cashee.</h1>
+    </div>
   );
 };
 

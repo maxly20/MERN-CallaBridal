@@ -1,8 +1,8 @@
-# INCOME TRACK - REACT APP
+# CASHEE - REACT BUDGETING APP
 
-A simple React App to keep track of income.
+A simple budgeting React App built with Context API.
 
-Deployed live at : https://maxly-incometrack.netlify.app
+Deployed live at : https://maxly-cashee.netlify.app
 
 ![](SitePreview.jpg)
 

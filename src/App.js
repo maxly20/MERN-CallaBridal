@@ -1,30 +1,24 @@
-import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
-import IncomeForm from './components/IncomeForm';
+import Balance from './components/Balance';
+import Transaction from './components/Transaction';
 import IncomeList from './components/IncomeList';
+import ExpenseList from './components/ExpenseList';
+import { GlobalContextProvider } from './context/GlobalState';
 
-function App() {
-  const [income, setIncome] = useState([]);
-  const [totalIncome, setTotalIncome] = useState(0);
-
-  useEffect(() => {
-    let temp = 0;
-    for (let i = 0; i < income.length; i++) {
-      temp += parseInt(income[i].price);
-    }
-
-    setTotalIncome(temp);
-  }, [income]);
-
+const App = () => {
   return (
-    <div className='App'>
-      <div className='app__container'>
-        <Header totalIncome={totalIncome} />
-        <IncomeForm income={income} setIncome={setIncome} />
-        <IncomeList income={income} setIncome={setIncome} />
+    <GlobalContextProvider>
+      <div className='container'>
+        <div className='app-wrapper'>
+          <Header />
+          <Balance />
+          <Transaction />
+          <IncomeList />
+          <ExpenseList />
+        </div>
       </div>
-    </div>
+    </GlobalContextProvider>
   );
-}
+};
 
 export default App;
